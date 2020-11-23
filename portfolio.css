@@ -1,0 +1,32 @@
+/* USE THIS TO SEE BOXES 
+* {border: 1px solid red !important;}
+*/
+
+/*WELCOME SECTION TO BE HEIGHT OF VIEWPORT - INCLUDE LINKS TO PROJECTS AND TILES*/
+
+:root {--green-background: green;}
+
+html {box-sizing: border-box; margin: 0; padding: 0;}
+*, *:before, *:after {box-sizing: inherit;}
+
+#navbar {position: fixed; top: 10px; width: 99%; background-color: var(--green-background);}
+
+a {font-size: 1.5rem; text-decoration: none; color: red; padding: 0 20px;}
+.nav-link  {float: right; transition: all 0.6s ease 0.2s;}
+.nav-link:hover {color: orange;}
+
+#profile-link {color: green;}
+
+#welcome-section {background: orange; margin-top: 200px;}
+
+#badger-logo {float: left; width: 8%; height: auto;}
+
+#projects {display: grid;}
+
+.project-tile {background: blue;}
+
+#contact {background: yellow;}
+
+@media (max-width: 800px) {
+	p {font-size: 4rem;}
+}
