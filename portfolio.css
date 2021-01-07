@@ -1,7 +1,7 @@
 /* USE THIS TO SEE BOXES
 * {border: 1px solid red !important;}
 */
-* {border: 1px solid red !important;}
+
 /*WELCOME SECTION TO BE HEIGHT OF VIEWPORT - INCLUDE LINKS TO PROJECTS AND TILES*/
 
 html {
@@ -26,7 +26,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 99vw;
   background-color: var(--darkblue-background);
 }
 
@@ -34,8 +34,9 @@ a {
   font-size: 1.5rem;
   text-decoration: none;
   color: white;
-  padding: 0 2%;
+  padding: 1%;
 }
+
 .nav-link {
   float: left;
   transition: all 0.6s ease 0.2s;
@@ -52,24 +53,29 @@ a {
   background: hsla(240, 25%, 25%, 1);
   height: 100vh;
   width: 100vw;
+  padding: 3% 1%;
+  margin-left: -1%;
 }
 
 #badger-logo {
   float: left;
   width: 8%;
   height: auto;
-  margin-top: 1.8%;
+  margin: 2% 1%;
 }
 
 #projects {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 2% 2%;
+  width: 99vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: -0.5%;
 }
 
 .project-tile {
   background: blue;
 }
+
+article img {display: block; max-width: 95%; height: auto; margin: auto;}
 
 #contact {
   background: yellow;
