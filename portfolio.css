@@ -2,14 +2,14 @@
 * {border: 1px solid red !important;}
 */
 
-/*WELCOME SECTION TO BE HEIGHT OF VIEWPORT - INCLUDE LINKS TO PROJECTS AND TILES*/
-
-html {
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  background-color: black;
 }
+
 *,
 *:before,
 *:after {
@@ -18,6 +18,10 @@ html {
 
 :root {
   --darkblue-background: hsla(240, 30%, 15%, 1);
+  --navy-background: hsla(240, 25%, 25%, 1);
+  --maroon-background: hsla(0, 73%, 19%, 1);
+  --green-border: hsla(111, 100%, 54%, 1);
+  --black-border: hsla(0, 0%, 0%, 0.9);
   font-size: 1vw;
   color: white;
 }
@@ -26,8 +30,9 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 99vw;
+  width: 100%;
   background-color: var(--darkblue-background);
+  z-index: 2;
 }
 
 a {
@@ -45,16 +50,11 @@ a {
   color: orange;
 }
 
-#profile-link {
-  color: green;
-}
-
 #welcome-section {
-  background: hsla(240, 25%, 25%, 1);
+  background: var(--navy-background);
   height: 100vh;
-  width: 100vw;
-  padding: 3% 1%;
-  margin-left: -1%;
+  width: 100%;
+  padding: 3%;
 }
 
 #badger-logo {
@@ -64,25 +64,44 @@ a {
   margin: 2% 1%;
 }
 
+h1, h2, h3 {
+  padding: 2% 3%;
+}
+
 #projects {
+  padding-bottom: 2%;
+  background-color: var(--maroon-background);
+}
+
+.grid-display {
   display: grid;
-  width: 99vw;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-left: -0.5%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .project-tile {
+  max-width: 90%;
+  height: auto;
+  border-radius: 1%;
+  margin: 3% 2%;
   background: blue;
+  filter: brightness(0.7);
+  transition: all 0.4s ease 0.2s;
+}
+
+.project-tile:hover {
+  filter: brightness(1);
+  box-shadow:
+  8px 8px 20px 5px var(--black-border),
+    12px 12px 20px 5px var(--green-border);
+  transform: scale(1.05);
 }
 
 article img {display: block; max-width: 95%; height: auto; margin: auto;}
 
-#contact {
-  background: yellow;
-}
-
 footer {
   width: 100%;
+  margin: 0;
   background: black;
   text-align: center;
 }
@@ -96,6 +115,8 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/*#profile-link is only in HTML to fulfil criteria for FCC project*/
 
 .follow {
   transition: all 0.6s ease 0.2s;
