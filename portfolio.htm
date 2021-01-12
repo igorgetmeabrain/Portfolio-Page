@@ -3,10 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--FONTS-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="#" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Slabo+27px&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="portfolio.css">
 
   <!--This is required for FCC Test Suite-->
@@ -15,20 +14,21 @@
 </head>
 
 <body>
+  <div class="container">
+  <div class="content">
 
   <nav id="navbar">
     <a href="#welcome-section" class="nav-link">About Me</a>
     <a href="#projects" class="nav-link">My Projects</a>
-    <a href="#follow" class="nav-link">Follow Me</a>
+    <a href="#follow-me" class="nav-link">Follow Me</a>
   </nav>
 
   <section id="welcome-section">
-    <img id="badger-logo" src="https://live.staticflickr.com/65535/50576392253_b6fc5641ab_o.jpg" alt="badger-logo">
-    <h1>Doug Badger Portfolio</h1><br>
+    <h1>My Coding Adventure</h1><br>
     <p>Hello and welcome to my portfolio</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="xtarget">
     <h2>My Projects</h2>
     <div class="grid-display">
     <article class="project-tile">
@@ -58,8 +58,9 @@
   </div>
   </section>
 
-  <footer>
-    <h2 id="follow">Follow Me</h2>
+  <footer id="follow-me">
+    <h2>Follow Me</h2>
+    <!--#profile-link is only in HTML to fulfil criteria for FCC project-->
     <ul id="profile-link">
       <li><a href="https://github.com/igorgetmeabrain" target="_blank" class="follow"><span class="fab fa-github"></span> GitHub</a></li>
       <li><a href="https://www.freecodecamp.org/igorgetmeabrain" target="_blank" class="follow">freeCodeCamp <span class="fab fa-free-code-camp"></span></a></li>
@@ -67,6 +68,8 @@
     </ul>
   </footer>
 
+</div>
+</div>
 </body>
 
 </html>
