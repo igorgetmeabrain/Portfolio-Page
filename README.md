@@ -1,4 +1,4 @@
-# Portfolio-Page
+# Portfolio-Page (freeCodeCamp challenge)
 
 This project was created to fulfil an element of the Responsive Web Design course on freeCodeCamp.  
 The main aim of the project is to create a portfolio page to showcase small projects, using a simple, adaptable layout, to which new content can be added as required.
@@ -23,8 +23,8 @@ https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 
 ## Design
 
-blah
+I went for simplicity for this final project. Less is more. A fixed background image (resized with media queries), overlaid with three semi-transparent background colours to demarcate the sections of the page. A fixed navbar at the top for easy navigation and links to my external coding accounts at the bottom of the page. The Projects section is a simple flexbox layout with a 3D effect on the tiles on hover. I intend to continue to add to this as progress through further certifications.
 
 ## Conclusion
 
-blah
+This challenge is the culmination of several months work, learning to code from scratch, and whilst my confidence and abilities are continuing to develop, I can already see where I could improve on all of the projects which I have submitted thus far. However, in the interests of obsessive-tweak-avoidance, they will remain as they are, and I will look forward to my next project instead!
